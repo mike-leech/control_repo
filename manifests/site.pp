@@ -10,4 +10,5 @@ node 'puppetserver.localdomain' {
 
 node /^puppetclient/ {
   include role::app_server
+  include role::minecraft_server
 }
