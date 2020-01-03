@@ -3,7 +3,11 @@ ldap_servers:
   - '10.132.17.196'
   - '10.132.17.195'
 
+ntp::restrict:
+  -
+ntp::autoupdate: false
+ntp::enable: true
 ntp::servers:
-  - 'ntp9.physics.ox.ac.uk'
-  - 'ntp9.physics.ox.ac.uk'
-  - 'ntp9.oucs.ox.ac.uk'
+  - 'ntp0.physics.ox.ac.uk'
+  - 'ntp1.physics.ox.ac.uk'
+  - 'ntp0.oucs.ox.ac.uk'

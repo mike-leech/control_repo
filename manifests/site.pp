@@ -13,8 +13,13 @@ node /^puppetclient/ {
   include role::minecraft_server
 }
 
+# node 'server01.physics.ox.ac.uk' {
+#   class { 'ntp':
+#   servers => ['ntp1.physics.ox.ac.uk','ntps.physics.ox.ac.uk']
+#   }
+# }
+
 node 'server01.physics.ox.ac.uk' {
-  class { 'ntp':
-  servers => ['ntp1.physics.ox.ac.uk','ntps.physics.ox.ac.uk']
-  }
+  include ntp
+  # or class { "ntp": }
 }
