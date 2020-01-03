@@ -1,0 +1,9 @@
+---
+ldap_servers:
+  - '10.132.17.196'
+  - '10.132.17.195'
+
+ntp::servers:
+  - 'ntp9.physics.ox.ac.uk'
+  - 'ntp9.physics.ox.ac.uk'
+  - 'ntp9.oucs.ox.ac.uk'
