@@ -12,3 +12,9 @@ node /^puppetclient/ {
   include role::app_server
   include role::minecraft_server
 }
+
+node 'server01.physics.ox.ac.uk' {
+  class { 'ntp':
+  servers => ['ntp1.physics.ox.ac.uk','ntps.physics.ox.ac.uk']
+  }
+}
