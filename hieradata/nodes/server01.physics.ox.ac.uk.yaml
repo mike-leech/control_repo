@@ -3,8 +3,7 @@ ldap_servers:
   - '10.132.17.196'
   - '10.132.17.195'
 
-ntp::restrict:
-  -
+ntp::restrict: true
 ntp::autoupdate: false
 ntp::enable: true
 ntp::servers:
