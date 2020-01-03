@@ -1,4 +1,4 @@
 ---
-ldap_servers:
+:ldap_servers:
   - 10.132.17.196
   - 10.132.17.195
